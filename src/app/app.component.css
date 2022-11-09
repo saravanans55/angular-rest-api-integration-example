@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  
+  html {
+    height: -webkit-fill-available;
+  }
+  
+  #brandLogo{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  #leftSideMenu li a{
+    font-size: 14px;
+  }
+
+  .nav-link.active{
+    background-color: #0aae3d !important;
+}
