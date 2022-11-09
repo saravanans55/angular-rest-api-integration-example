@@ -27,17 +27,17 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">B1001</th>
+                  <tr *ngFor="let oneBook of booksList">
+                    <th scope="row">{{ oneBook.bookId }}</th>
                     <td>
-                        <b>Hooked</b>
+                        <b>{{ oneBook.bookTitle }}</b>
                         <br>
-                        <small>How to build habit forming products!</small>
+                        <small>{{ oneBook.bookDesc }}</small>
                     </td>
-                    <td>Nir Eyal</td>
-                    <td>5 Stars</td>
-                    <td>333 Rs/-</td>
-                    <td>40% Completed</td>
+                    <td>{{ oneBook.authorName }}</td>
+                    <td>{{ oneBook.ratings }}</td>
+                    <td>{{ oneBook.price }}</td>
+                    <td>{{ oneBook.readStatus }}% Completed</td>
                     <td>
                       <button class="btn btn-primary"><i class="bi bi-eye"></i> View</button>
                     </td>
